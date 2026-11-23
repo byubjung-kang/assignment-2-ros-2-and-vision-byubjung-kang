@@ -13,10 +13,10 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='aisd',
-    maintainer_email='aisd@todo.todo',
-    description='TODO: Package description',
-    license='Apache-2.0',
+    maintainer='Byubjung Kang',
+    maintainer_email='kang0096@algonquinlive.com',
+    description='ROS2 motion control using hand gestures',
+    license='no license',
     extras_require={
         'test': [
             'pytest',
@@ -24,6 +24,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
+		'move = aisd_motion.move:main',
         ],
     },
 )
