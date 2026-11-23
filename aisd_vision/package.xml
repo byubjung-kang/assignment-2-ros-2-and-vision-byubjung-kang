@@ -3,9 +3,9 @@
 <package format="3">
   <name>aisd_vision</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="aisd@todo.todo">aisd</maintainer>
-  <license>Apache-2.0</license>
+  <description>ROS2 vision package for camera and hand detection</description>
+  <maintainer email="kang0096@algonquinlive.com">Byubjung Kang</maintainer>
+  <license>no license</license>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
@@ -15,4 +15,13 @@
   <export>
     <build_type>ament_python</build_type>
   </export>
+
+  <depend>rclpy</depend>
+  <depend>image_transport</depend>
+  <depend>cv_bridge</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>aisd_msgs</depend>
+  <depend>python3-mediapipe-pip</depend>
+
 </package>
